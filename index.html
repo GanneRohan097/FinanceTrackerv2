@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="con">
+        <h1>Finance Tracker</h1>
+        <div id="balance">
+            <p>Current Balance</p>
+            <h1 id="amount">₹ 0.00</h1>.
+            <div id="tracker">
+                <div id="income">
+                    <h3>Income</h3>
+                    <p id="incomeamount">₹0.00</p>
+                </div>
+                <div id="expenses">
+                    <h3>Expenses</h3>
+                    <p id="expensesamount">₹0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="trans">
+                <h2>Transactions</h2>
+                <ul id="transactionlist">
+
+                </ul>
+            </div>
+            <div class="form">
+                <h2>Add Transactions</h2>
+                <form id="tform">
+                    <div class="formgrp">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="Enter Description" required/>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="formgrp">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount1" placeholder="Enter Amount" required/>
+                        <small>use '-' for expenses</small>
+                    </div>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    <div class="showbut" onclick="show()">
+    <button  class="bot">Show History</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
